@@ -106,14 +106,11 @@ console.log(contactInfo);
 
 const uni = [];
 
-function uniFinder() {
- for (let i = 0; i < graduates.length; i++){
-  if (graduates[i].university.includes(uni)){
-    uni.push(`${graduates[i].university}`);
+  for (let i = 0; i < graduates.length; i++){
+    if (graduates[i].university.includes('Uni')){
+      uni.push(graduates[i].university)
+    }
   }
-}
-}
-uniFinder(graduates, "uni");
 
 console.log(uni);
 
